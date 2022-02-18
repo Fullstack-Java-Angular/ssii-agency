@@ -1,7 +1,7 @@
 package ma.youcode.service;
 
-import ma.youcode.domain.Employee;
-import ma.youcode.repository.EmployeeRepository;
+import ma.youcode.domain.Address;
+import ma.youcode.repository.AddressRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -10,25 +10,23 @@ import java.util.List;
 
 @Service
 @Transactional
-public class EmployeeService {
-
+public class AddressService {
     @Autowired
-    private EmployeeRepository repository;
+    private AddressRepository repository;
 
-    public void save(Employee employee) {
-        repository.save(employee);
+    public void save(Address address) {
+        repository.save(address);
     }
 
-    public List<Employee> listAll() {
-        return (List<Employee>) repository.findAll();
+    public List<Address> listAll() {
+        return (List<Address>) repository.findAll();
     }
 
-    public Employee get(Long id) {
+    public Address get(Long id) {
         return repository.findById(id).get();
     }
 
     public void delete(Long id) {
         repository.deleteById(id);
     }
-
 }

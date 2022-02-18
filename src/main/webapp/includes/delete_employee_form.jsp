@@ -1,7 +1,7 @@
 <div id="deleteEmployeeModal" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
-      <form action="${pageContext.servletContext.contextPath}/delete" method="post">
+      <form action="${pageContext.servletContext.contextPath}/employee/delete" method="post">
         <div class="modal-header">
           <h4 class="modal-title">Delete Employee</h4>
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>

@@ -26,8 +26,18 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>5.3.15</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-jpa</artifactId>
+      <version>2.6.1</version>
+    </dependency>
+    <dependency>
       <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-core-jakarta</artifactId>
+      <artifactId>hibernate-core</artifactId>
       <version>5.6.3.Final</version>
     </dependency>
     <dependency>
@@ -44,6 +54,11 @@
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.27</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.spec.javax.annotation</groupId>
+      <artifactId>jboss-annotations-api_1.3_spec</artifactId>
+      <version>2.0.1.Final</version>
     </dependency>
   </dependencies>
 

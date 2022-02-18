@@ -381,6 +381,7 @@
                 <tbody id="tableEmployeeBody">
                 <%
                     List<Employee> employees = (List<Employee>) request.getAttribute("employees");
+                    System.out.println(employees);
                     for (Employee e : employees) {
                 %>
                 <tr>

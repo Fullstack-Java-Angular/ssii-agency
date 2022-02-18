@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class=" d-flex  align-items-center justify-content-center mt-5">
-    <form class="text-center border border-light p-5" method="post" action="">
+    <form class="text-center border border-light p-5" method="post" action="${pageContext.request.contextPath}/login">
         <p class="h4 mb-4">Login</p>
 
         <p>Welcome Back, simply dummy text of the printing</p>

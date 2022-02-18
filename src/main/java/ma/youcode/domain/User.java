@@ -1,6 +1,6 @@
 package ma.youcode.domain;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "user")
